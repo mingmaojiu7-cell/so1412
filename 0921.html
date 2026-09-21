@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>0921-CSS簡介</title>
+        <!--html的註解-->
+        <style>
+            /*CSS的註解*/
+            /*CSS又稱樣式表*/
+            
+            /*選擇器=seleector 有三種 標籤名稱,#id,.class*/
+            /*display:block/inline/inline-block;
+            width: px; pixal 像素
+            height:px;
+            color 前景顏色
+            background-color 背景顏色*/
+            
+            /*顏色設置方式
+            1 英文單字
+            2 rgp(紅光0-225,藍光0-225,綠光0-225)
+            3 色碼 #RRGGBB(00-FF)
+            4 hsl色相環 色相(0-360)彩度(0-100)亮度(0-100)
+            5 hsla 色相(0-360)彩度(0-100)亮度(0-100)可見度(0-1)
+            6 rgba(紅光0-225,藍光0-225,綠光0-225)可見度(0-1)*/
+
+
+                        P{
+                        background-color: aquamarine;
+                        }
+                        #p1{background-color: antiquewhite;}
+                        .c1{
+                            color:hotpink}
+                        #d1{background-color:cadetblue;
+                            height: 50px;
+                            width: 50px;
+                            display: inline-block;
+                        }
+
+                        #s1{
+                            background-color:rgb(206, 170, 122);
+                            height: 50px;
+                            width: 50px;
+                            display: inline-block;
+                        }
+        </style>
+    </head>
+    <body>
+        
+        <a id="p1" class="c1"></a><P>第一個段落</P>
+        <P>第二個段落</P>
+        <P class="c1">第三個段落</P>
+        <div id="d1" class="dc1">1</div>
+        <div class="dc1"></div>
+        <span id="s1">1</span>
+    </body>
+</html>
