@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>CSS容器設定</title>
+        <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;
+            border-color:gray;
+            border-width: 5px;
+            border-style:outset;
+            /*padding/border一次會設定全部,若要各設定由"上右下左"之順序*/
+            padding: 10px 10px;
+            /*強制決定盒子大小box-sizing:content-box/border-box;*/
+            margin:10;
+            /*間隔*/
+        }
+        #d2{
+            height:100px;
+            border:1px solid cadetblue;
+            width: 100px;
+            margin:20px;
+            border-radius:58%;/*相對單位*/
+          
+        }
+        #d3{
+            border:1px solid cadetblue;
+            height:50px;
+            width: 50px;
+            margin:20px;
+            border-radius:25px;/*絕對單位*/
+        }
+        #d4{
+            border: 50px solid brown; 
+            height:0px;
+            width:0px;
+            margin:20px;
+            border-color: aquamarine slateblue yellow ;
+        }
+
+        #d5{
+            border: 50px solid transparent;
+            height:0px;
+            width: 50px;
+            margin:0px;
+            border-bottom-color: aquamarine;
+            border-top-width:0;
+            }
+        #d6{
+            border: 76px solid transparent;
+            height:0px;
+            width: 0px;
+            margin:0px;
+            border-top-color: aquamarine;
+            border-bottom-width:0;
+        }
+        #t1{
+            
+        }
+        </style>
+    </head>
+    <body>
+        <div id="d1">內容</div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <hr>
+        <div id="d5"></div>
+        <div id="d6"></div>
+        <div id="t1"></div>
+    </body>
+</html>
