@@ -65,9 +65,51 @@
             #t2{
                 width: 20px;
                 height: 40px;
-                background-colar:brown;
+                background-color:brown;
                 margin:0 auto;
             }
+            #h2{
+                width: 0;
+                height: 0;
+                border-left:50px solid transparent;
+                border-right:50px solid transparent;
+                border-bottom:50px solid red;
+                mardin: 0 auto;
+                display:block;
+            }
+            #h1{
+                width: 80px;
+                height: 60px;
+                background-color:lightskyblue;
+                margin:0 auto;
+                positoin:relative;
+                }
+            #door{
+                width:20px;
+                height:30px;
+                background-color:brown;
+                position:absolute;
+                bottom:0;
+                left:50%;
+                margin-left:-10px;
+                }
+            #s1{
+                width:30px;
+                height:30px;
+                background-color:yellow;
+                position:relative;
+                margin:50px auto;
+                }
+            #s2{
+                width:30px;
+                height:30px;
+                background-color:yellow;
+                position:absolute;
+                top:0;
+                left:0;
+                transform:rotate(45deg);
+            }
+            
         </style>
     </head>
     <body>
@@ -79,5 +121,12 @@
         <div id="d5"></div>
         <div id="d6"></div>
         <div id="t1"></div>
+        <hr>
+        <div id="h2"></div>
+        <div id="h1"></div>
+        <div id="door"></div>
+        <div id="s1">
+         <div id="s2"></div>
+        </div>
     </body>
 </html>
