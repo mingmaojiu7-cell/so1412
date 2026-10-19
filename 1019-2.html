@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>變形與轉變</title>
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 50px;
+        }
+        #d1{
+            transform: rotate(45deg);/*順時針旋轉*/
+        }
+        #d2{
+            transform: rotate(-45deg);/*逆時針旋轉*/
+        }
+        #d3{
+            transform:scale(2,1);/*倍率*/
+        }
+        #d4{
+            transform:translate(20px,10px)/*位移*/
+        }
+        #d5{
+            transform: skew(30deg,10deg);/*扭曲*/
+        }
+        #d6{
+            transform:translate(50px)rotate(45deg);/*先位移再旋轉*/
+        }
+        #d7{
+            transform: rotate(45deg)translate(30px);/*先旋轉再位移*/
+        }
+        #d8:hover{/*手移上去*/
+            background-color: red;
+            transform: rotate(50deg);
+        }
+        #d8{
+            background-color: aqua;
+            transition: transform 2s;
+        }
+        #d9{
+            box-shadow: 10px 10px black;
+        }
+        #d10{
+            box-shadow: 10px 10px 5px black;
+        }
+        #d11{
+            box-shadow: 0px 0px 0px 10px black;
+        }
+        #d12{
+            text-shadow: 2px 2px 5px red;
+            font-size: 50px;
+        }
+        #d13{
+            font-size: 50px;
+            color: white;
+            text-shadow: 0px 0px 10px blue;
+        }
+    </style>
+    
+    
+    
+    </head>
+    <body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <p id="d12">文字</p>
+    <p id="d13">word</p>
+    </body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>位置</title>
+    <style>
+        /*position: relative;是相對自己的座標*/
+        /*position: absolute;是相對於有設定position的副容器/body的絕對座標*/
+    #dad{
+        border:1px solid black;
+        width:600px;
+        height:600px;
+        position: relative;
+        top:10px;/*其他副容器會跟著dad一起動*/
+        z-index:20;
+    }
+    #d1{
+        border:2px solid blue;
+        width:100px;
+        height:100px;
+        position:absolute;
+        right:10px;
+        bottom:10px;
+        background-color:hsla(0deg,100%,50%,1)
+    }
+    #d2{
+        border:2px solid red;
+        width:100px;
+        height:100px;
+        background-color: hsla(0deg,100%,50%,0.5);
+        position:relative;
+        top:30px;
+    }
+    #d3{
+        border:2px solid purple;
+        width:100px;
+        height:100px;
+    }
+    #uncle{
+        border:2px dashed black;
+        width:100px;
+        height:100px;
+        position: relative;
+        left:20;
+        z-index:50;/*圖層 數字大的在上面(如果一樣就是後生成的在上)需要在有設定position的情況下*/
+    }
+    </style>
+    <head>
+    </head>
+    <body>
+    <div id="dad">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        </div>
+    <div id="uncle"></div>
+
+    </body>
+</html>
